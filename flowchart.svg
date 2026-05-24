@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="392pt" height="1036pt" viewBox="0.00 0.00 392.00 1036.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1032)">
+<title>SparseDenseIndexingWorkflow</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1032 387.7,-1032 387.7,4 -4,4"/>
+<text xml:space="preserve" text-anchor="middle" x="191.85" y="-1011.4" font-family="Times,serif" font-size="14.00">Workflow of Sparse vs Dense Indexing Project (Vertical Flow)</text>
+<!-- Start -->
+<g id="node1" class="node">
+<title>Start</title>
+<path fill="none" stroke="#009acd" d="M222.35,-1003.2C222.35,-1003.2 192.35,-1003.2 192.35,-1003.2 186.35,-1003.2 180.35,-997.2 180.35,-991.2 180.35,-991.2 180.35,-979.2 180.35,-979.2 180.35,-973.2 186.35,-967.2 192.35,-967.2 192.35,-967.2 222.35,-967.2 222.35,-967.2 228.35,-967.2 234.35,-973.2 234.35,-979.2 234.35,-979.2 234.35,-991.2 234.35,-991.2 234.35,-997.2 228.35,-1003.2 222.35,-1003.2"/>
+<text xml:space="preserve" text-anchor="middle" x="207.35" y="-981.6" font-family="Helvetica,sans-Serif" font-size="12.00">Start</text>
+</g>
+<!-- Upload -->
+<g id="node2" class="node">
+<title>Upload</title>
+<path fill="none" stroke="#009acd" d="M278.05,-930.2C278.05,-930.2 136.65,-930.2 136.65,-930.2 130.65,-930.2 124.65,-924.2 124.65,-918.2 124.65,-918.2 124.65,-906.2 124.65,-906.2 124.65,-900.2 130.65,-894.2 136.65,-894.2 136.65,-894.2 278.05,-894.2 278.05,-894.2 284.05,-894.2 290.05,-900.2 290.05,-906.2 290.05,-906.2 290.05,-918.2 290.05,-918.2 290.05,-924.2 284.05,-930.2 278.05,-930.2"/>
+<text xml:space="preserve" text-anchor="middle" x="207.35" y="-908.6" font-family="Helvetica,sans-Serif" font-size="12.00">User uploads dataset (CSV)</text>
+</g>
+<!-- Start&#45;&gt;Upload -->
+<g id="edge1" class="edge">
+<title>Start-&gt;Upload</title>
+<path fill="none" stroke="black" d="M207.35,-967.01C207.35,-959.43 207.35,-950.3 207.35,-941.74"/>
+<polygon fill="black" stroke="black" points="210.85,-941.74 207.35,-931.74 203.85,-941.74 210.85,-941.74"/>
+</g>
+<!-- CheckSize -->
+<g id="node3" class="node">
+<title>CheckSize</title>
+<path fill="none" stroke="#009acd" d="M254.04,-857.2C254.04,-857.2 160.66,-857.2 160.66,-857.2 154.66,-857.2 148.66,-851.2 148.66,-845.2 148.66,-845.2 148.66,-833.2 148.66,-833.2 148.66,-827.2 154.66,-821.2 160.66,-821.2 160.66,-821.2 254.04,-821.2 254.04,-821.2 260.04,-821.2 266.04,-827.2 266.04,-833.2 266.04,-833.2 266.04,-845.2 266.04,-845.2 266.04,-851.2 260.04,-857.2 254.04,-857.2"/>
+<text xml:space="preserve" text-anchor="middle" x="207.35" y="-835.6" font-family="Helvetica,sans-Serif" font-size="12.00">Check dataset size</text>
+</g>
+<!-- Upload&#45;&gt;CheckSize -->
+<g id="edge2" class="edge">
+<title>Upload-&gt;CheckSize</title>
+<path fill="none" stroke="black" d="M207.35,-894.01C207.35,-886.43 207.35,-877.3 207.35,-868.74"/>
+<polygon fill="black" stroke="black" points="210.85,-868.74 207.35,-858.74 203.85,-868.74 210.85,-868.74"/>
+</g>
+<!-- Trim -->
+<g id="node4" class="node">
+<title>Trim</title>
+<path fill="none" stroke="#009acd" d="M225.71,-768.4C225.71,-768.4 58.99,-768.4 58.99,-768.4 52.99,-768.4 46.99,-762.4 46.99,-756.4 46.99,-756.4 46.99,-744.4 46.99,-744.4 46.99,-738.4 52.99,-732.4 58.99,-732.4 58.99,-732.4 225.71,-732.4 225.71,-732.4 231.71,-732.4 237.71,-738.4 237.71,-744.4 237.71,-744.4 237.71,-756.4 237.71,-756.4 237.71,-762.4 231.71,-768.4 225.71,-768.4"/>
+<text xml:space="preserve" text-anchor="middle" x="142.35" y="-746.8" font-family="Helvetica,sans-Serif" font-size="12.00">Trim dataset if exceeds max limit</text>
+</g>
+<!-- CheckSize&#45;&gt;Trim -->
+<g id="edge3" class="edge">
+<title>CheckSize-&gt;Trim</title>
+<path fill="none" stroke="red" d="M194.51,-821.05C185.31,-808.77 172.75,-791.99 162.25,-777.98"/>
+<polygon fill="red" stroke="red" points="165.09,-775.93 156.29,-770.02 159.49,-780.12 165.09,-775.93"/>
+<text xml:space="preserve" text-anchor="middle" x="211.77" y="-790.6" font-family="Times,serif" font-size="14.00">If too large</text>
+</g>
+<!-- Proceed -->
+<g id="node5" class="node">
+<title>Proceed</title>
+<path fill="none" stroke="#009acd" d="M259.38,-695.4C259.38,-695.4 155.32,-695.4 155.32,-695.4 149.32,-695.4 143.32,-689.4 143.32,-683.4 143.32,-683.4 143.32,-671.4 143.32,-671.4 143.32,-665.4 149.32,-659.4 155.32,-659.4 155.32,-659.4 259.38,-659.4 259.38,-659.4 265.38,-659.4 271.38,-665.4 271.38,-671.4 271.38,-671.4 271.38,-683.4 271.38,-683.4 271.38,-689.4 265.38,-695.4 259.38,-695.4"/>
+<text xml:space="preserve" text-anchor="middle" x="207.35" y="-673.8" font-family="Helvetica,sans-Serif" font-size="12.00">Proceed with dataset</text>
+</g>
+<!-- CheckSize&#45;&gt;Proceed -->
+<g id="edge4" class="edge">
+<title>CheckSize-&gt;Proceed</title>
+<path fill="none" stroke="green" d="M233.75,-820.85C239.25,-815.86 244.3,-809.92 247.35,-803.2 251.78,-793.43 259.13,-770.71 246.35,-732.4 243.05,-722.52 237.25,-712.9 231.1,-704.59"/>
+<polygon fill="green" stroke="green" points="234.04,-702.66 225.08,-697 228.56,-707.01 234.04,-702.66"/>
+<text xml:space="preserve" text-anchor="middle" x="292.7" y="-746.2" font-family="Times,serif" font-size="14.00">If within limit</text>
+</g>
+<!-- Trim&#45;&gt;Proceed -->
+<g id="edge5" class="edge">
+<title>Trim-&gt;Proceed</title>
+<path fill="none" stroke="black" d="M158.08,-732.21C165.91,-723.67 175.52,-713.17 184.17,-703.72"/>
+<polygon fill="black" stroke="black" points="186.57,-706.28 190.74,-696.55 181.4,-701.56 186.57,-706.28"/>
+</g>
+<!-- Columns -->
+<g id="node6" class="node">
+<title>Columns</title>
+<path fill="none" stroke="#009acd" d="M272.38,-622.4C272.38,-622.4 142.32,-622.4 142.32,-622.4 136.32,-622.4 130.32,-616.4 130.32,-610.4 130.32,-610.4 130.32,-598.4 130.32,-598.4 130.32,-592.4 136.32,-586.4 142.32,-586.4 142.32,-586.4 272.38,-586.4 272.38,-586.4 278.38,-586.4 284.38,-592.4 284.38,-598.4 284.38,-598.4 284.38,-610.4 284.38,-610.4 284.38,-616.4 278.38,-622.4 272.38,-622.4"/>
+<text xml:space="preserve" text-anchor="middle" x="207.35" y="-600.8" font-family="Helvetica,sans-Serif" font-size="12.00">Display available columns</text>
+</g>
+<!-- Proceed&#45;&gt;Columns -->
+<g id="edge6" class="edge">
+<title>Proceed-&gt;Columns</title>
+<path fill="none" stroke="black" d="M207.35,-659.21C207.35,-651.63 207.35,-642.5 207.35,-633.94"/>
+<polygon fill="black" stroke="black" points="210.85,-633.94 207.35,-623.94 203.85,-633.94 210.85,-633.94"/>
+</g>
+<!-- Sparse -->
+<g id="node7" class="node">
+<title>Sparse</title>
+<path fill="none" stroke="#009acd" d="M187.71,-549.4C187.71,-549.4 94.99,-549.4 94.99,-549.4 88.99,-549.4 82.99,-543.4 82.99,-537.4 82.99,-537.4 82.99,-525.4 82.99,-525.4 82.99,-519.4 88.99,-513.4 94.99,-513.4 94.99,-513.4 187.71,-513.4 187.71,-513.4 193.71,-513.4 199.71,-519.4 199.71,-525.4 199.71,-525.4 199.71,-537.4 199.71,-537.4 199.71,-543.4 193.71,-549.4 187.71,-549.4"/>
+<text xml:space="preserve" text-anchor="middle" x="141.35" y="-527.8" font-family="Helvetica,sans-Serif" font-size="12.00">Build Sparse Index</text>
+</g>
+<!-- Columns&#45;&gt;Sparse -->
+<g id="edge7" class="edge">
+<title>Columns-&gt;Sparse</title>
+<path fill="none" stroke="black" d="M191.37,-586.21C183.43,-577.67 173.67,-567.17 164.89,-557.72"/>
+<polygon fill="black" stroke="black" points="167.58,-555.48 158.21,-550.54 162.45,-560.24 167.58,-555.48"/>
+</g>
+<!-- Dense -->
+<g id="node8" class="node">
+<title>Dense</title>
+<path fill="none" stroke="#009acd" d="M327.05,-549.4C327.05,-549.4 237.65,-549.4 237.65,-549.4 231.65,-549.4 225.65,-543.4 225.65,-537.4 225.65,-537.4 225.65,-525.4 225.65,-525.4 225.65,-519.4 231.65,-513.4 237.65,-513.4 237.65,-513.4 327.05,-513.4 327.05,-513.4 333.05,-513.4 339.05,-519.4 339.05,-525.4 339.05,-525.4 339.05,-537.4 339.05,-537.4 339.05,-543.4 333.05,-549.4 327.05,-549.4"/>
+<text xml:space="preserve" text-anchor="middle" x="282.35" y="-527.8" font-family="Helvetica,sans-Serif" font-size="12.00">Build Dense Index</text>
+</g>
+<!-- Columns&#45;&gt;Dense -->
+<g id="edge8" class="edge">
+<title>Columns-&gt;Dense</title>
+<path fill="none" stroke="black" d="M225.51,-586.21C234.65,-577.56 245.91,-566.9 255.99,-557.36"/>
+<polygon fill="black" stroke="black" points="258.15,-560.13 263,-550.72 253.33,-555.05 258.15,-560.13"/>
+</g>
+<!-- SparseQuery -->
+<g id="node9" class="node">
+<title>SparseQuery</title>
+<path fill="none" stroke="#009acd" d="M174.07,-476.4C174.07,-476.4 26.63,-476.4 26.63,-476.4 20.63,-476.4 14.63,-470.4 14.63,-464.4 14.63,-464.4 14.63,-452.4 14.63,-452.4 14.63,-446.4 20.63,-440.4 26.63,-440.4 26.63,-440.4 174.07,-440.4 174.07,-440.4 180.07,-440.4 186.07,-446.4 186.07,-452.4 186.07,-452.4 186.07,-464.4 186.07,-464.4 186.07,-470.4 180.07,-476.4 174.07,-476.4"/>
+<text xml:space="preserve" text-anchor="middle" x="100.35" y="-454.8" font-family="Helvetica,sans-Serif" font-size="12.00">Run queries on Sparse Index</text>
+</g>
+<!-- Sparse&#45;&gt;SparseQuery -->
+<g id="edge9" class="edge">
+<title>Sparse-&gt;SparseQuery</title>
+<path fill="none" stroke="black" d="M131.42,-513.21C126.74,-505.1 121.04,-495.24 115.81,-486.18"/>
+<polygon fill="black" stroke="black" points="118.97,-484.65 110.94,-477.74 112.91,-488.15 118.97,-484.65"/>
+</g>
+<!-- DenseQuery -->
+<g id="node10" class="node">
+<title>DenseQuery</title>
+<path fill="none" stroke="#009acd" d="M362.4,-476.4C362.4,-476.4 218.3,-476.4 218.3,-476.4 212.3,-476.4 206.3,-470.4 206.3,-464.4 206.3,-464.4 206.3,-452.4 206.3,-452.4 206.3,-446.4 212.3,-440.4 218.3,-440.4 218.3,-440.4 362.4,-440.4 362.4,-440.4 368.4,-440.4 374.4,-446.4 374.4,-452.4 374.4,-452.4 374.4,-464.4 374.4,-464.4 374.4,-470.4 368.4,-476.4 362.4,-476.4"/>
+<text xml:space="preserve" text-anchor="middle" x="290.35" y="-454.8" font-family="Helvetica,sans-Serif" font-size="12.00">Run queries on Dense Index</text>
+</g>
+<!-- Dense&#45;&gt;DenseQuery -->
+<g id="edge11" class="edge">
+<title>Dense-&gt;DenseQuery</title>
+<path fill="none" stroke="black" d="M284.29,-513.21C285.15,-505.54 286.19,-496.29 287.17,-487.64"/>
+<polygon fill="black" stroke="black" points="290.62,-488.26 288.26,-477.93 283.66,-487.48 290.62,-488.26"/>
+</g>
+<!-- SparseMeasure -->
+<g id="node11" class="node">
+<title>SparseMeasure</title>
+<path fill="none" stroke="#009acd" d="M170.7,-403.4C170.7,-403.4 12,-403.4 12,-403.4 6,-403.4 0,-397.4 0,-391.4 0,-391.4 0,-378.6 0,-378.6 0,-372.6 6,-366.6 12,-366.6 12,-366.6 170.7,-366.6 170.7,-366.6 176.7,-366.6 182.7,-372.6 182.7,-378.6 182.7,-378.6 182.7,-391.4 182.7,-391.4 182.7,-397.4 176.7,-403.4 170.7,-403.4"/>
+<text xml:space="preserve" text-anchor="middle" x="91.35" y="-388.6" font-family="Helvetica,sans-Serif" font-size="12.00">Measure Sparse Index</text>
+<text xml:space="preserve" text-anchor="middle" x="91.35" y="-374.2" font-family="Helvetica,sans-Serif" font-size="12.00">(Query Time &amp; Memory Usage)</text>
+</g>
+<!-- SparseQuery&#45;&gt;SparseMeasure -->
+<g id="edge10" class="edge">
+<title>SparseQuery-&gt;SparseMeasure</title>
+<path fill="none" stroke="black" d="M98.17,-440.12C97.23,-432.65 96.1,-423.71 95.04,-415.27"/>
+<polygon fill="black" stroke="black" points="98.51,-414.86 93.79,-405.37 91.57,-415.73 98.51,-414.86"/>
+</g>
+<!-- DenseMeasure -->
+<g id="node12" class="node">
+<title>DenseMeasure</title>
+<path fill="none" stroke="#009acd" d="M371.7,-403.4C371.7,-403.4 213,-403.4 213,-403.4 207,-403.4 201,-397.4 201,-391.4 201,-391.4 201,-378.6 201,-378.6 201,-372.6 207,-366.6 213,-366.6 213,-366.6 371.7,-366.6 371.7,-366.6 377.7,-366.6 383.7,-372.6 383.7,-378.6 383.7,-378.6 383.7,-391.4 383.7,-391.4 383.7,-397.4 377.7,-403.4 371.7,-403.4"/>
+<text xml:space="preserve" text-anchor="middle" x="292.35" y="-388.6" font-family="Helvetica,sans-Serif" font-size="12.00">Measure Dense Index</text>
+<text xml:space="preserve" text-anchor="middle" x="292.35" y="-374.2" font-family="Helvetica,sans-Serif" font-size="12.00">(Query Time &amp; Memory Usage)</text>
+</g>
+<!-- DenseQuery&#45;&gt;DenseMeasure -->
+<g id="edge12" class="edge">
+<title>DenseQuery-&gt;DenseMeasure</title>
+<path fill="none" stroke="black" d="M290.83,-440.12C291.04,-432.65 291.29,-423.71 291.53,-415.27"/>
+<polygon fill="black" stroke="black" points="295.03,-415.48 291.81,-405.38 288.03,-415.28 295.03,-415.48"/>
+</g>
+<!-- Compare -->
+<g id="node13" class="node">
+<title>Compare</title>
+<path fill="none" stroke="#009acd" d="M268.38,-329.6C268.38,-329.6 114.32,-329.6 114.32,-329.6 108.32,-329.6 102.32,-323.6 102.32,-317.6 102.32,-317.6 102.32,-305.6 102.32,-305.6 102.32,-299.6 108.32,-293.6 114.32,-293.6 114.32,-293.6 268.38,-293.6 268.38,-293.6 274.38,-293.6 280.38,-299.6 280.38,-305.6 280.38,-305.6 280.38,-317.6 280.38,-317.6 280.38,-323.6 274.38,-329.6 268.38,-329.6"/>
+<text xml:space="preserve" text-anchor="middle" x="191.35" y="-308" font-family="Helvetica,sans-Serif" font-size="12.00">Compare performance metrics</text>
+</g>
+<!-- SparseMeasure&#45;&gt;Compare -->
+<g id="edge13" class="edge">
+<title>SparseMeasure-&gt;Compare</title>
+<path fill="none" stroke="black" d="M116.33,-366.17C128.92,-357.17 144.37,-346.14 157.97,-336.43"/>
+<polygon fill="black" stroke="black" points="159.7,-339.5 165.8,-330.84 155.63,-333.8 159.7,-339.5"/>
+</g>
+<!-- DenseMeasure&#45;&gt;Compare -->
+<g id="edge14" class="edge">
+<title>DenseMeasure-&gt;Compare</title>
+<path fill="none" stroke="black" d="M267.12,-366.17C254.4,-357.17 238.79,-346.14 225.06,-336.43"/>
+<polygon fill="black" stroke="black" points="227.33,-333.75 217.14,-330.83 223.29,-339.46 227.33,-333.75"/>
+</g>
+<!-- Visualize -->
+<g id="node14" class="node">
+<title>Visualize</title>
+<path fill="none" stroke="#009acd" d="M274.06,-256.6C274.06,-256.6 108.64,-256.6 108.64,-256.6 102.64,-256.6 96.64,-250.6 96.64,-244.6 96.64,-244.6 96.64,-232.6 96.64,-232.6 96.64,-226.6 102.64,-220.6 108.64,-220.6 108.64,-220.6 274.06,-220.6 274.06,-220.6 280.06,-220.6 286.06,-226.6 286.06,-232.6 286.06,-232.6 286.06,-244.6 286.06,-244.6 286.06,-250.6 280.06,-256.6 274.06,-256.6"/>
+<text xml:space="preserve" text-anchor="middle" x="191.35" y="-235" font-family="Helvetica,sans-Serif" font-size="12.00">Visualize results using Matplotlib</text>
+</g>
+<!-- Compare&#45;&gt;Visualize -->
+<g id="edge15" class="edge">
+<title>Compare-&gt;Visualize</title>
+<path fill="none" stroke="black" d="M191.35,-293.41C191.35,-285.83 191.35,-276.7 191.35,-268.14"/>
+<polygon fill="black" stroke="black" points="194.85,-268.14 191.35,-258.14 187.85,-268.14 194.85,-268.14"/>
+</g>
+<!-- Display -->
+<g id="node15" class="node">
+<title>Display</title>
+<path fill="none" stroke="#009acd" d="M257.39,-183.6C257.39,-183.6 125.31,-183.6 125.31,-183.6 119.31,-183.6 113.31,-177.6 113.31,-171.6 113.31,-171.6 113.31,-158.8 113.31,-158.8 113.31,-152.8 119.31,-146.8 125.31,-146.8 125.31,-146.8 257.39,-146.8 257.39,-146.8 263.39,-146.8 269.39,-152.8 269.39,-158.8 269.39,-158.8 269.39,-171.6 269.39,-171.6 269.39,-177.6 263.39,-183.6 257.39,-183.6"/>
+<text xml:space="preserve" text-anchor="middle" x="191.35" y="-168.8" font-family="Helvetica,sans-Serif" font-size="12.00">Display graph comparing</text>
+<text xml:space="preserve" text-anchor="middle" x="191.35" y="-154.4" font-family="Helvetica,sans-Serif" font-size="12.00">Sparse vs Dense Indexing</text>
+</g>
+<!-- Visualize&#45;&gt;Display -->
+<g id="edge16" class="edge">
+<title>Visualize-&gt;Display</title>
+<path fill="none" stroke="black" d="M191.35,-220.32C191.35,-212.85 191.35,-203.91 191.35,-195.47"/>
+<polygon fill="black" stroke="black" points="194.85,-195.58 191.35,-185.58 187.85,-195.58 194.85,-195.58"/>
+</g>
+<!-- Conclusion -->
+<g id="node16" class="node">
+<title>Conclusion</title>
+<path fill="none" stroke="#009acd" d="M251.04,-109.8C251.04,-109.8 131.66,-109.8 131.66,-109.8 125.66,-109.8 119.66,-103.8 119.66,-97.8 119.66,-97.8 119.66,-85 119.66,-85 119.66,-79 125.66,-73 131.66,-73 131.66,-73 251.04,-73 251.04,-73 257.04,-73 263.04,-79 263.04,-85 263.04,-85 263.04,-97.8 263.04,-97.8 263.04,-103.8 257.04,-109.8 251.04,-109.8"/>
+<text xml:space="preserve" text-anchor="middle" x="191.35" y="-95" font-family="Helvetica,sans-Serif" font-size="12.00">Show conclusion:</text>
+<text xml:space="preserve" text-anchor="middle" x="191.35" y="-80.6" font-family="Helvetica,sans-Serif" font-size="12.00">Time vs Space trade-off</text>
+</g>
+<!-- Display&#45;&gt;Conclusion -->
+<g id="edge17" class="edge">
+<title>Display-&gt;Conclusion</title>
+<path fill="none" stroke="black" d="M191.35,-146.45C191.35,-138.89 191.35,-129.86 191.35,-121.38"/>
+<polygon fill="black" stroke="black" points="194.85,-121.46 191.35,-111.46 187.85,-121.46 194.85,-121.46"/>
+</g>
+<!-- End -->
+<g id="node17" class="node">
+<title>End</title>
+<path fill="none" stroke="#009acd" d="M206.35,-36C206.35,-36 176.35,-36 176.35,-36 170.35,-36 164.35,-30 164.35,-24 164.35,-24 164.35,-12 164.35,-12 164.35,-6 170.35,0 176.35,0 176.35,0 206.35,0 206.35,0 212.35,0 218.35,-6 218.35,-12 218.35,-12 218.35,-24 218.35,-24 218.35,-30 212.35,-36 206.35,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="191.35" y="-14.4" font-family="Helvetica,sans-Serif" font-size="12.00">End</text>
+</g>
+<!-- Conclusion&#45;&gt;End -->
+<g id="edge18" class="edge">
+<title>Conclusion-&gt;End</title>
+<path fill="none" stroke="black" d="M191.35,-72.75C191.35,-65.23 191.35,-56.25 191.35,-47.82"/>
+<polygon fill="black" stroke="black" points="194.85,-47.96 191.35,-37.96 187.85,-47.96 194.85,-47.96"/>
+</g>
+</g>
+</svg>
